@@ -1,5 +1,6 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Header from '../Header/header';
 import './navigation.css';
 
 function Navigation() {
@@ -10,7 +11,7 @@ function Navigation() {
             justify>
             <Tab eventKey="header" title="Header">
                 <div className='frame'>
-                    <h1>NOP</h1>
+                    <Header />
                 </div>
             </Tab>
             <Tab eventKey="attributes" title="Attributes">
