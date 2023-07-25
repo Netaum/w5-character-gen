@@ -1,0 +1,35 @@
+.header {
+  text-align: center;
+}
+
+
+.page {
+  width: 800px;
+  display: block;
+}
+
+.page_shadow {
+  margin: 13px auto;
+  box-shadow: 1px 1px 3px 1px #333;
+  border-collapse: separate;
+  position: relative;
+  background-color: rgb(146, 136, 136);
+  overflow: hidden;
+  border: 0;
+}
+
+.background {
+  background-color: white;
+  background-image: url('../../assets/images/background1.jpg');
+  background-size: cover;
+}
+
+.logo {
+  width: 40%;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
