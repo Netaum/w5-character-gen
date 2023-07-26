@@ -31,9 +31,13 @@ export class Trait {
             newValue = this.initialValue;
 
         if (this.group.check(this.id, newValue, allow))
-            this.value = newValue;
+            this.setValue(newValue);
         else
             this.notifyError('Invalid trait value');
+    }
+
+    setValue(newValue) {
+        this.value = newValue;
     }
 
     expendXP(xpValue) {

@@ -43,15 +43,13 @@ class Fill extends React.Component {
     }
 
     handleClick(value) {
-        const trait = this.context[this.type].traits[this.traitId];
-        trait.changeValue(value, true);
-        this.context.update(this.context);
+        this.context.updateTrait(this.context, this.type, this.traitId, value);
     }
 
     render() {
         const trait = this.context[this.type].traits[this.traitId];
+        console.log(trait);
         const fill = createArray(Array(trait.maxValue), trait.value);
-        console.log(this.context);
         return (
             <div>
                 <span id="1" className="wod wod-attribute">

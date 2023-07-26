@@ -1,0 +1,34 @@
+@font-face {
+    font-family: typewriter;
+    src: url(../../assets/fonts/typewriter.ttf);
+}
+
+@font-face {
+    font-family: druk;
+    src: url(../../assets/fonts/druk.otf);
+}
+
+.inner-frame {
+    padding-bottom: 20px;
+}
+
+.attribute-text {
+    padding-top: 15px;
+    text-align: center;
+    font-family: druk;
+    font-size: 30px;
+}
+
+.attribute-fill {
+    padding-top: 10px;
+}
+
+.fill {
+    text-align: center;
+    justify-content: center;
+}
+
+.attribute-label {
+    font-family: typewriter;
+    font-size: 18px;
+}

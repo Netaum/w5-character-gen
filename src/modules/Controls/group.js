@@ -6,14 +6,18 @@ export class Group {
                  type = 'attributes',
                  initialValue = 0,
                  xpMultiplier = 5,
+                 maxValue = 5,
                  limits)
     {
         this.traits = Object.fromEntries(
-            traitIds.map(traitId => [traitId, new Trait(this, initialValue, traitId, xpMultiplier)])
+            traitIds.map(traitId => [traitId, new Trait(this, initialValue, traitId, xpMultiplier, maxValue)])
         );
         
         this.id = id;
         this.type = type;
+
+        if(!limits)
+            return;
 
         const limitsCopy = { ...limits };
 
