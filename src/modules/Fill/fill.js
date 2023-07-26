@@ -48,6 +48,10 @@ class Fill extends React.Component {
 
     render() {
         const trait = this.context[this.type].traits[this.traitId];
+        if(!trait) {
+            console.log(this.type + " " + this.traitId);
+            return (<div>NOT FOUND</div>);
+        }
         const fill = createArray(Array(trait.maxValue), trait.value);
         return (
             <div>

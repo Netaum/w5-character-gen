@@ -2,12 +2,13 @@
     "athletics": "Athletics",
     "brawl": "Brawl",
     "craft":"Craft",
-    "drive": "Drive",
+    "driving": "Driving",
     "firearms": "Firearms",
     "larceny": "Larceny",
     "melee": "Melee",
     "stealth": "Stealth",
     "survival": "Survival",
+
     "animalKen": "Animal Ken",
     "etiquette": "Etiquette",
     "insight": "Insight",
@@ -17,6 +18,7 @@
     "persuasion": "Persuasion",
     "streetwise": "Streetwise",
     "subterfuge": "Subterfuge",
+    
     "academics": "Academics",
     "awareness": "Awareness",
     "finance": "Finance",

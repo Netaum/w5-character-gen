@@ -28,7 +28,7 @@ i18n
         common: common_en,
         header: header_en,
         attributes: attribute_en,
-        skill: skill_en,
+        skills: skill_en,
         labels: labels_en,
         disciplines: disciplines_en
       },
@@ -36,7 +36,7 @@ i18n
         common: common_pt,
         header: header_pt,
         attributes: attribute_pt,
-        skill: skill_pt,
+        skills: skill_pt,
         labels: labels_pt,
         disciplines: disciplines_pt
       }

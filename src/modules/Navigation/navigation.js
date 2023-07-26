@@ -2,6 +2,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Header from '../Header/header';
 import Attribute from '../Attribute/attribute';
+import Skill from '../Skill/skill';
 import { useTranslation } from 'react-i18next';
 import './navigation.css';
 
@@ -19,7 +20,7 @@ function Navigation() {
                 <Attribute />
             </Tab>
             <Tab eventKey="skills" title={t('labels:skills')} className='frame'>
-                <h1>NOP</h1>
+                <Skill />
             </Tab>
             <Tab eventKey="powers" title={t('labels:powers')} className='frame'>
                 <h1>NOP</h1>

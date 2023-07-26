@@ -11,12 +11,17 @@ const ATT_LIMITS =
 }
 const BASE_HEALTH = 3;
 const ATTRIBUTES = ['str', 'dex', 'sta', 'int', 'wit', 'res', 'cha', 'man', 'com'];
+const SKILLS = ['ath', 'bra', 'cra', 'dri', 'fir', 'lar', 'mel', 'ste', 'sur',
+                'ake', 'eti', 'ins', 'int', 'lea', 'per', 'pes', 'str', 'sub',
+                'aca', 'awa', 'fin', 'inv', 'med', 'occ', 'pol', 'sci', 'tec'];
+
 const EXPENDABLES = ['health', 'willpower'];
 const EXPENDABLES_STARTING_VALUES = {'health': BASE_HEALTH + 1, 'willpower': 2};
 
 export const SheetState = {
     attributes: new Group(ATTRIBUTES, 'attributes', 'attributes', 1, 5, 5, null, ATT_LIMITS),
     expendables: new Group(EXPENDABLES, 'expendables', 'expendables', 1, 5, 10, EXPENDABLES_STARTING_VALUES, null),
+    skills: new Group(SKILLS, 'skills', 'skills', 0, 3, 5, null, null),
     headers : {
         "name": "",
         "concept": "",
@@ -35,6 +40,10 @@ function updateTrait(state, type, traitId, newValue) {
     const trait = state[type].traits[traitId];
     trait.changeValue(newValue, true);
     state.update(state);
+
+    if (type !== 'attributes')
+        return;
+    
     const resolve = state['attributes'].traits['res'].value;
     const composure = state['attributes'].traits['com'].value;
     const stamina = state['attributes'].traits['sta'].value;

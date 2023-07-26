@@ -10,42 +10,80 @@ function Skill() {
 
     return (
         <Container className='inner-frame'>
-            <Row className='skill-text'>
-                <Col md={4}>{t('labels:physical')}</Col>
-                <Col md={4}>{t('labels:social')}</Col>
-                <Col md={4}>{t('labels:mental')}</Col>
-            </Row>
             <hr />
             <Row className='skill-fill'>
-                <Col md={1} className='skill-label'>Strength</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="str" shape="circle" /></Col>
-
-                <Col md={1} className='skill-label'>Charisma</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="cha" shape="circle" /></Col>
-
-                <Col md={1} className='skill-label'>Intelligence</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="int" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:athletics')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="ath" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:animalKen')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="ake" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:academics')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="aca" shape="circle" /></Col>
             </Row>
             <Row className='skill-fill'>
-                <Col md={1} className='skill-label'>Dexterity</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="dex" shape="circle" /></Col>
-
-                <Col md={1} className='skill-label'>Manipulation</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="man" shape="circle" /></Col>
-
-                <Col md={1} className='skill-label'>Wits</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="wit" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:brawl')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="bra" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:etiquette')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="eti" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:awareness')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="awa" shape="circle" /></Col>
             </Row>
             <Row className='skill-fill'>
-                <Col md={1} className='skill-label'>Stamina</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="sta" shape="circle" /></Col>
-
-                <Col md={1} className='skill-label'>Composure</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="com" shape="circle" /></Col>
-
-                <Col md={1} className='skill-label'>Resolve</Col>
-                <Col md={3} className='fill'><Fill type='skills' traitId="res" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:craft')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="cra" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:insight')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="ins" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:finance')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="fin" shape="circle" /></Col>
             </Row>
+            <Row className='skill-fill'>
+                <Col md={2} className='skill-label'>{t('skills:driving')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="dri" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:intimidation')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="int" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:investigation')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="inv" shape="circle" /></Col>
+            </Row>
+            <Row className='skill-fill'>
+                <Col md={2} className='skill-label'>{t('skills:firearms')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="fir" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:leadership')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="lea" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:medicine')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="med" shape="circle" /></Col>
+            </Row>
+            <Row className='skill-fill'>
+                <Col md={2} className='skill-label'>{t('skills:larceny')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="lar" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:performance')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="per" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:occult')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="occ" shape="circle" /></Col>
+            </Row>
+            <Row className='skill-fill'>
+                <Col md={2} className='skill-label'>{t('skills:melee')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="mel" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:persuasion')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="pes" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:politics')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="pol" shape="circle" /></Col>
+            </Row>
+            <Row className='skill-fill'>
+                <Col md={2} className='skill-label'>{t('skills:stealth')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="ste" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:streetwise')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="str" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:science')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="sci" shape="circle" /></Col>
+            </Row>
+            <Row className='skill-fill'>
+                <Col md={2} className='skill-label'>{t('skills:survival')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="sur" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:subterfuge')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="sub" shape="circle" /></Col>
+                <Col md={2} className='skill-label'>{t('skills:technology')}</Col>
+                <Col md={2} className='skill-fill-value'><Fill type='skills' traitId="tec" shape="circle" /></Col>
+            </Row>
+            
         </Container>
     );
 }

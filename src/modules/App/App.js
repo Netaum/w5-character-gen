@@ -2,9 +2,7 @@ import './App.css';
 import { SheetContext, SheetState } from '../Context/context';
 import React from 'react';
 import Navigation from '../Navigation/navigation';
-import Container from 'react-bootstrap/Container';
 import logo from '../../assets/images/logo.png';
-import line from '../../assets/images/line.png';
 
 class App extends React.Component {
 
