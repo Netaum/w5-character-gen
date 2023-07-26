@@ -15,8 +15,16 @@ const ATTRIBUTES = ['str', 'dex', 'sta', 'int', 'wit', 'res', 'cha', 'man', 'com
 export const SheetState = {
     name: 'Neto',
     attributes: new Group(ATTRIBUTES, 'attributes', 'attributes', 1, 5, ATT_LIMITS),
-    updateName: updateName,
-    updateAttribute: updateAttribute
+    headers : {
+        "name": "",
+        "concept": "",
+        "chronicle": "",
+        "tribe": "",
+        "auspice": "",
+        "patron": "",
+    },
+    updateAttribute: updateAttribute,
+    updateHeader: updateHeader
 }
 
 export const SheetContext = createContext(SheetState);
@@ -26,8 +34,8 @@ function updateAttribute(state, traitId, newValue) {
     state.update(state);
 }
 
-function updateName (state) {
-    state.name = 'New Name';
+function updateHeader (state, header, value) {
+    state.headers[header] = value;
     state.update(state);
 }
 
