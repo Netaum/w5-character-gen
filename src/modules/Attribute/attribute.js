@@ -17,33 +17,33 @@ function Attribute() {
             </Row>
             <hr />
             <Row className='attribute-fill'>
-                <Col md={1} className='attribute-label'>Strength</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:strength')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="str" shape="circle" /></Col>
 
-                <Col md={1} className='attribute-label'>Charisma</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:charisma')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="cha" shape="circle" /></Col>
 
-                <Col md={1} className='attribute-label'>Intelligence</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:intelligence')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="int" shape="circle" /></Col>
             </Row>
             <Row className='attribute-fill'>
-                <Col md={1} className='attribute-label'>Dexterity</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:dexterity')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="dex" shape="circle" /></Col>
 
-                <Col md={1} className='attribute-label'>Manipulation</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:manipulation')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="man" shape="circle" /></Col>
 
-                <Col md={1} className='attribute-label'>Wits</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:wits')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="wit" shape="circle" /></Col>
             </Row>
             <Row className='attribute-fill'>
-                <Col md={1} className='attribute-label'>Stamina</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:stamina')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="sta" shape="circle" /></Col>
 
-                <Col md={1} className='attribute-label'>Composure</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:composure')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="com" shape="circle" /></Col>
 
-                <Col md={1} className='attribute-label'>Resolve</Col>
+                <Col md={1} className='attribute-label'>{t('attributes:resolve')}</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="res" shape="circle" /></Col>
             </Row>
             <hr />

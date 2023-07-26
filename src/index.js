@@ -10,8 +10,8 @@ import common_en from  "./translations/en/common.json";
 import common_pt from  "./translations/pt/common.json";
 import header_en from "./translations/en/header.json";
 import header_pt from "./translations/pt/header.json";
-import ability_en from  "./translations/en/ability.json";
-import ability_pt from  "./translations/pt/ability.json";
+import attribute_en from  "./translations/en/attributes.json";
+import attribute_pt from  "./translations/pt/attributes.json";
 import skill_en from "./translations/en/skill.json";
 import skill_pt from "./translations/pt/skill.json";
 import labels_en from "./translations/en/labels.json";
@@ -27,7 +27,7 @@ i18n
       en: {
         common: common_en,
         header: header_en,
-        ability: ability_en,
+        attributes: attribute_en,
         skill: skill_en,
         labels: labels_en,
         disciplines: disciplines_en
@@ -35,7 +35,7 @@ i18n
       pt: {
         common: common_pt,
         header: header_pt,
-        ability: ability_pt,
+        attributes: attribute_pt,
         skill: skill_pt,
         labels: labels_pt,
         disciplines: disciplines_pt

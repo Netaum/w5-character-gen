@@ -1,0 +1,61 @@
+@font-face {
+    font-family: typewriter;
+    src: url(../../assets/fonts/typewriter.ttf);
+}
+
+@font-face {
+    font-family: druk;
+    src: url(../../assets/fonts/druk.otf);
+}
+
+@font-face {
+    font-family: wod;
+    src: url(../../assets/fonts/wod1.woff) format('woff');
+}
+
+.wod{
+    font-family: wod;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    visibility: visible;
+    color: black;
+    word-spacing: 0.000000px;
+    white-space: pre;
+    transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+    unicode-bidi: bidi-override;
+    z-index: 99;
+    background-color: white;
+}
+
+.inner-frame {
+    padding-bottom: 20px;
+}
+
+.skill-text {
+    padding-top: 15px;
+    text-align: center;
+    font-family: druk;
+    font-size: 30px;
+}
+
+.skill-fill {
+    padding-top: 10px;
+}
+
+.fill {
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.skill-expendable {
+    font-size: 25px;
+}
+
+.skill-label {
+    font-family: typewriter;
+    font-size: 18px;
+}

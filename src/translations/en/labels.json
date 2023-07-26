@@ -1,7 +1,7 @@
 {
-    "attributes": "ATTRIBUTES",
-    "skills": "SKILLS",
-    "diciplines": "DISCIPLINES",
+    "attributes": "Attributes",
+    "skills": "Skills",
+    "powers": "Powers",
     "physical": "Physical",
     "social": "Social",
     "mental": "Mental",
@@ -19,5 +19,6 @@
     "feedingPenalty": "Feeding Penalty",
     "banSeverity": "Bane Severity",
     "advantagesFlaws": "ADVANTAGES & FLAWS",
-    "crinos": "Crinos"
+    "crinos": "Crinos",
+    "charInfo": "Character Info"
 }
