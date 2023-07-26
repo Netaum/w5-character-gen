@@ -48,11 +48,10 @@ class Fill extends React.Component {
 
     render() {
         const trait = this.context[this.type].traits[this.traitId];
-        console.log(trait);
         const fill = createArray(Array(trait.maxValue), trait.value);
         return (
             <div>
-                <span id="1" className="wod wod-attribute">
+                <span id="1" className="wod">
                     {fill.map((value, index) => (this.item(index, value)))}
                 </span>
             </div>

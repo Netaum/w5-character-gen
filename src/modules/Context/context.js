@@ -12,11 +12,11 @@ const ATT_LIMITS =
 const BASE_HEALTH = 3;
 const ATTRIBUTES = ['str', 'dex', 'sta', 'int', 'wit', 'res', 'cha', 'man', 'com'];
 const EXPENDABLES = ['health', 'willpower'];
+const EXPENDABLES_STARTING_VALUES = {'health': BASE_HEALTH + 1, 'willpower': 2};
 
 export const SheetState = {
-    name: 'Neto',
-    attributes: new Group(ATTRIBUTES, 'attributes', 'attributes', 1, 5, 5, ATT_LIMITS),
-    expendables: new Group(EXPENDABLES, 'expendables', 'expendables', 1, 5, 10),
+    attributes: new Group(ATTRIBUTES, 'attributes', 'attributes', 1, 5, 5, null, ATT_LIMITS),
+    expendables: new Group(EXPENDABLES, 'expendables', 'expendables', 1, 5, 10, EXPENDABLES_STARTING_VALUES, null),
     headers : {
         "name": "",
         "concept": "",

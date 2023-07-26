@@ -8,6 +8,28 @@
     src: url(../../assets/fonts/druk.otf);
 }
 
+@font-face {
+    font-family: wod;
+    src: url(../../assets/fonts/wod1.woff) format('woff');
+}
+
+.wod{
+    font-family: wod;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    visibility: visible;
+    color: black;
+    word-spacing: 0.000000px;
+    white-space: pre;
+    transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+    unicode-bidi: bidi-override;
+    z-index: 99;
+    background-color: white;
+}
+
 .inner-frame {
     padding-bottom: 20px;
 }
@@ -26,6 +48,26 @@
 .fill {
     text-align: center;
     justify-content: center;
+    font-size: 18px;
+}
+
+.fill-expendable {
+    font-size: 25px;
+}
+
+.crinos-text {
+    text-align: left;
+    font-family: druk;
+    font-size: 24px;
+    display: flex;
+}
+
+.crinos-health {
+    text-align: left;
+    font-family: wod;
+    font-size: 25px;
+    align-self: flex-end;
+    padding-left: 15px;
 }
 
 .attribute-label {

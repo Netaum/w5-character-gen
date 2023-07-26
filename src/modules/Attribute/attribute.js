@@ -15,7 +15,7 @@ function Attribute() {
                 <Col md={4}>{t('labels:social')}</Col>
                 <Col md={4}>{t('labels:mental')}</Col>
             </Row>
-            <Row />
+            <hr />
             <Row className='attribute-fill'>
                 <Col md={1} className='attribute-label'>Strength</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="str" shape="circle" /></Col>
@@ -46,8 +46,18 @@ function Attribute() {
                 <Col md={1} className='attribute-label'>Resolve</Col>
                 <Col md={3} className='fill'><Fill type='attributes' traitId="res" shape="circle" /></Col>
             </Row>
+            <hr />
+            <Row className='attribute-text'>
+                <Col md={6}>{t('labels:health')}</Col>
+                <Col md={6}>{t('labels:willpower')}</Col>
+            </Row>
             <Row>
-                <Col><Fill type='expendables' traitId='health' shape='square' /></Col>
+                <Col md={6} className='fill fill-expendable'><Fill type='expendables' traitId='health' shape='square' /></Col>
+                <Col md={6} className='fill fill-expendable'><Fill type='expendables' traitId='willpower' shape='square' /></Col>
+            </Row>
+            <Row>
+                <Col md={1} />
+                <Col md={5} className='crinos-text'><span>Crinos  </span><span className='wod crinos-health'>aaaa</span></Col>
             </Row>
         </Container>
     );

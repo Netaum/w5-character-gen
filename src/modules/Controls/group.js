@@ -1,22 +1,36 @@
 import Trait from './trait.js';
 
 export class Group {
-    constructor (traitIds,
-                 id = 'id',
-                 type = 'attributes',
-                 initialValue = 0,
-                 xpMultiplier = 5,
-                 maxValue = 5,
-                 limits)
-    {
+    constructor(traitIds,
+        id = 'id',
+        type = 'attributes',
+        initialValue = 0,
+        xpMultiplier = 5,
+        maxValue = 5,
+        startingValues = null,
+        limits = null) {
         this.traits = Object.fromEntries(
             traitIds.map(traitId => [traitId, new Trait(this, initialValue, traitId, xpMultiplier, maxValue)])
         );
-        
+
         this.id = id;
         this.type = type;
+        this.limits = null;
+        this.setLimits(limits);
+        this.setStartingValues(startingValues);
+    }
 
-        if(!limits)
+    setStartingValues(startingValues) {
+        if (!startingValues)
+            return;
+
+        for (const key in startingValues) {
+            this.traits[key].setValue(startingValues[key]);
+        }
+    }
+
+    setLimits(limits) {
+        if (!limits)
             return;
 
         const limitsCopy = { ...limits };
@@ -28,16 +42,16 @@ export class Group {
             limitsCopy[k] = newAcc;
             acc = newAcc;
         });
-       
+
         this.limits = limitsCopy;
     }
 
-    check(traitId, newValue, allow=false) {
+    check(traitId, newValue, allow = false) {
         if (allow)
             return true;
-            
+
         let value = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
-        
+
         for (const key in this.traits) {
             if (key === traitId)
                 continue;
