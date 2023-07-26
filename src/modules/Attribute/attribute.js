@@ -57,7 +57,7 @@ function Attribute() {
             </Row>
             <Row>
                 <Col md={1} />
-                <Col md={5} className='crinos-text'><span>Crinos  </span><span className='wod crinos-health'>aaaa</span></Col>
+                <Col md={5} className='crinos-text'><span>{t('labels:crinos')}</span><span className='wod crinos-health'>aaaa</span></Col>
             </Row>
         </Container>
     );
