@@ -1,3 +1,43 @@
+@font-face {
+    font-family: typewriter;
+    src: url(../../assets/fonts/typewriter.ttf);
+}
+
+@font-face {
+    font-family: handwrite;
+    src: url(../../assets/fonts/hand.ttf);
+}
+
+@font-face {
+    font-family: druk;
+    src: url(../../assets/fonts/druk.otf);
+}
+
+
 .inner-frame {
-    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.header-text {
+    padding-top: 15px;
+    text-align: left;
+    font-family: typewriter;
+    font-size: 20px;
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+}
+
+input[type="text"] {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-size: 24px;
+}
+
+input:focus {
+    border-color: red;
+    outline: 1px dotted black
 }

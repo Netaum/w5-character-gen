@@ -1,13 +1,10 @@
 {
     "name": "Name",
     "concept": "Concept",
-    "predator": "Predator",
+    "patron": "Patron",
     "chronicle": "Chronicle",
-    "ambition": "Ambition",
-    "clan": "Clan",
-    "sire": "Sire",
-    "desire": "Desire",
-    "generation": "Generation",
+    "auspice": "Auspice",
+    "tribe": "Tribe",
     "predatorTypes": [
         "Alleycat",
         "Bagger",

@@ -8,7 +8,6 @@ class Input extends React.Component {
 
     constructor(props) {
         super(props);
-        this.label = props.name;
         const size = props.size;
 
         this.size = isNaN(size) ? 120 : size;
@@ -19,7 +18,6 @@ class Input extends React.Component {
     render() {
         return (
             <div>
-                <span>{this.label}</span>
                 <input type='text' style={{width: this.size + 'px'}}  />
             </div>
         );

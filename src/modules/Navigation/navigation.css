@@ -18,13 +18,13 @@
 .nav-tabs .nav-link {
     color: black;
     font-family: typewriter;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     background-color: rgba(0,0,0, .20);
 }
 
 .nav-tabs .nav-link.active {
-    border-color: purple;
+    border-color: black;
 }
 
 .nav-justified .nav-item .nav-link {
@@ -52,15 +52,13 @@
     color: lightsalmon;
 }
 
-
-
 .nav-tabs-custom .nav-link {
     border: solid 1px black;
     color: lightsalmon;
 }
 
 .navbar-custom .nav-link.active {
-    color: purple;
+    color: black;
 }
 
 .nav-tabs .nav-item.show .nav-link {

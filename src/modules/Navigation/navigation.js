@@ -5,29 +5,21 @@ import './navigation.css';
 
 function Navigation() {
     return (
-        <Tabs defaultActiveKey='sheet'
+        <Tabs defaultActiveKey='header'
             id='navigation-tab-id'
             className='navbar-custom'
             justify>
-            <Tab eventKey="header" title="Header">
-                <div className='frame'>
-                    <Header />
-                </div>
+            <Tab eventKey="header" title="Header" className='frame'>
+                <Header />
             </Tab>
             <Tab eventKey="attributes" title="Attributes">
-                <div className='frame'>
-                    <h1>NOP</h1>
-                </div>
+                <h1>NOP</h1>
             </Tab>
             <Tab eventKey="skills" title="Skills">
-                <div className='frame'>
-                    <h1>NOP</h1>
-                </div>
+                <h1>NOP</h1>
             </Tab>
             <Tab eventKey="powers" title="Powers">
-                <div className='frame'>
-                    <h1>NOP</h1>
-                </div>
+                <h1>NOP</h1>
             </Tab>
         </Tabs>
     );
